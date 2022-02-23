@@ -13,13 +13,16 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.6.3",
+    "casual": "^1.6.2",
     "express": "^4.17.3",
     "graphql": "^16.3.0",
-    "mongoose": "^6.2.2"
+    "mongoose": "^6.2.2",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.19",
+    "@types/uuid": "^8.3.4",
     "nodemon": "^2.0.15"
   }
 }

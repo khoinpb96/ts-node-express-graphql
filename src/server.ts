@@ -2,14 +2,14 @@ import mongoose from "mongoose";
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
 import typeDefs from "./typeDefs";
-import resolvers from "./resolvers";
+import mocks from "./mocks";
 
 (async () => {
   const app = express();
-  const apolloServer = new ApolloServer({ typeDefs, resolvers });
-  await apolloServer.start();
+  const server = new ApolloServer({ typeDefs, mocks });
+  await server.start();
 
-  apolloServer.applyMiddleware({ app });
+  server.applyMiddleware({ app });
 
   app.use((req, res) => res.send("Init server succesfully"));
 

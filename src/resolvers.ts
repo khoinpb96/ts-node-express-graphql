@@ -2,7 +2,7 @@ import UserModel from "./Model/User";
 
 const resolvers = {
   Query: {
-    getUsers: async () => await UserModel.find(),
+    users: async () => await UserModel.find(),
   },
 
   Mutation: {
